@@ -1,0 +1,9 @@
+CH.ifa.draw.standard.NorthEastHandle
+CH.ifa.draw.standard.SouthHandle
+CH.ifa.draw.standard.EastHandle
+CH.ifa.draw.standard.NorthHandle
+CH.ifa.draw.standard.SouthWestHandle
+CH.ifa.draw.standard.BoxHandleKit
+CH.ifa.draw.standard.WestHandle
+CH.ifa.draw.standard.SouthEastHandle
+CH.ifa.draw.standard.NorthWestHandle

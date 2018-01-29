@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="clases.Marriage" table="marriage">
+       <id name="id" type="int">
+            <column name="id_marriage" />
+             <generator class="increment"></generator>
+        </id>
+         
+         
+         <set name="couple" table="person"  cascade="save-update" >
+          <key column="marriage" />              
+          <one-to-many class="clases.Person"/>
+         </set>
+         
+          <set name="children" table="person"  cascade= "save-update">
+          <key column="from_marriage" />              
+          <one-to-many class="clases.Person"/>
+         </set>
+       
+       
+         <property name="coordinateX1" type="int">
+            <column name="coordinatex1"  not-null="true" />
+        </property>
+         <property name="coordinateY1" type="int">
+            <column name="coordinatey1"  not-null="true" />
+        </property>
+                 <property name="coordinateX2" type="int">
+            <column name="coordinatex2"  not-null="true" />
+        </property>
+         <property name="coordinateY2" type="int">
+            <column name="coordinatey2"  not-null="true" />
+        </property>
+
+        
+        <property name="color" type="string">
+            <column name="color" length="9" not-null="true" />
+        </property>
+  </class>
+</hibernate-mapping>
